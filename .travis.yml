@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: GxHOaUO05o26FsVFRbrP54aDhWcOGzgbnaGotJyj7WgExg0AKdj0eFXQEVVNRiLq57V9sbkh0cwJ+n5qB5K2zjsCKKj/kShcjadU2xQw1kAe9Z/iWD9bzHD6AhG8UFj37e9MyfFUCgQd12fnFpY3AmNlA85y67oPZhMb5LAxioARcF9P+blb1Crb2PlKyCu9dZ7SZl/5crfmSwo5sL0rIqbStDoegGh2SstPLgoxMkEidmTBacy3rAUgjYnWTbsxXqEUSuQpd7mOf6hbDnR0AcjtTBsscSpKKkl7PtgZm3j7ttsbpDW6NrI33KNYgeG14nJ1BvYTfQQf24qlPNDV6Vfybnc+OPEY8xs5WokirKIRtYJVL7OeVyp/TX1tpAT9D/OX91juobaoI8ZqiWv4BrBLdYKmDN7PjAetGnk0Rqvqj5OQpahKhmfkq+PfODko9RqUewJK1wNli40oCaUahkN5iZgTtRar9+GfuSWU9KRTcf2qn56iZkRz6GkzC/eLaBL6g2Apz+bpajjjAt+DtiZjespre+Tm804n8rhXIWPHNX83RFzfBg3y5+OgIBX8KYYBEsorq5pGZ2XNT8rtN4q60kiF0Wqf0Z6ggp0/5CflX2GNqz7Syx03NYu25ozkqealHqXo5E9qhBUb4eE9FFkNd6i6miohJYqFjvL6uLk=
+  app: whispering-taiga-78360
+  on:
+    repo: JasminTrotter/react-hot-cold-testing-ci
